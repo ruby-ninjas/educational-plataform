@@ -1,5 +1,36 @@
 source 'https://rubygems.org'
 
+# Logins
+gem 'devise'
+gem 'devise-async'
+gem 'omniauth'
+gem 'omniauth-github'
+
+# Bootstraping / Layout & Assets
+gem 'haml-rails'
+gem 'bootstrap-sass'
+gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms' 
+gem 'font-awesome-sass'
+gem 'nprogress-rails'
+gem	'lesstile' # For friendly texts quotes
+
+# Mails
+gem 'sendgrid'
+
+# Images
+gem 'paperclip'
+gem 'aws-sdk'
+
+# App means
+gem 'shareable'
+gem 'socialization'
+gem 'friendly_id', '~> 5.0.0'
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
+gem 'impressionist'
+
+# App DevOps
+gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -33,6 +64,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  # Development ops
+  gem 'thin'
+  gem 'quiet_assets'
+
+  # Testing
+  gem 'rspec-rails'
+  gem 'cucumber'
+  gem 'ffaker'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
